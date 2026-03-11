@@ -17,7 +17,7 @@ const userSchema=new mongoose.Schema({
     bio:String,
     profileImage:{
         type:String,
-        default:"image link here"
+        default:process.env.DEFAULT_IMG
     }
 });
 const userModel=mongoose.model("user",userSchema);
